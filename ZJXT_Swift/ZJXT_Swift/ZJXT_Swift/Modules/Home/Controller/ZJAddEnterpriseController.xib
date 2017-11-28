@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJAddEnterpriseController" customModule="ZJXT_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="firstField" destination="Cha-nE-9hE" id="UtR-RB-JgK"/>
+                <outlet property="fourField" destination="Et0-0V-Duk" id="EBf-X3-gSG"/>
+                <outlet property="secondField" destination="paX-iQ-cOu" id="XsA-Wd-UhY"/>
+                <outlet property="thirdField" destination="rzk-Pl-F3Q" id="ZAU-sj-Y41"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ish-8A-HfE">
+                    <rect key="frame" x="0.0" y="10" width="375" height="200"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入企业名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cha-nE-9hE">
+                            <rect key="frame" x="15" y="10" width="345" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Vpq-xu-nfl"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入企业联系人" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="paX-iQ-cOu">
+                            <rect key="frame" x="15" y="55" width="345" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="hv2-c1-hZh"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入企业电话" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rzk-Pl-F3Q">
+                            <rect key="frame" x="15" y="100" width="345" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="JyV-R6-vl6"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入实习岗位" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Et0-0V-Duk">
+                            <rect key="frame" x="15" y="145" width="345" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="UFx-PZ-2te"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="EIp-NN-YKR"/>
+                        <constraint firstItem="rzk-Pl-F3Q" firstAttribute="leading" secondItem="Cha-nE-9hE" secondAttribute="leading" id="JaE-fi-v44"/>
+                        <constraint firstAttribute="trailing" secondItem="Cha-nE-9hE" secondAttribute="trailing" constant="15" id="Jct-aP-qEl"/>
+                        <constraint firstItem="Et0-0V-Duk" firstAttribute="top" secondItem="rzk-Pl-F3Q" secondAttribute="bottom" constant="10" id="W5I-3t-yJJ"/>
+                        <constraint firstItem="Cha-nE-9hE" firstAttribute="top" secondItem="ish-8A-HfE" secondAttribute="top" constant="10" id="adf-co-Jlk"/>
+                        <constraint firstItem="Et0-0V-Duk" firstAttribute="leading" secondItem="Cha-nE-9hE" secondAttribute="leading" id="d06-yk-TVO"/>
+                        <constraint firstItem="rzk-Pl-F3Q" firstAttribute="top" secondItem="paX-iQ-cOu" secondAttribute="bottom" constant="10" id="eZ8-zP-7Vo"/>
+                        <constraint firstItem="paX-iQ-cOu" firstAttribute="trailing" secondItem="Cha-nE-9hE" secondAttribute="trailing" id="fYE-gZ-ewy"/>
+                        <constraint firstItem="Et0-0V-Duk" firstAttribute="trailing" secondItem="Cha-nE-9hE" secondAttribute="trailing" id="gTv-SI-GnR"/>
+                        <constraint firstItem="paX-iQ-cOu" firstAttribute="leading" secondItem="Cha-nE-9hE" secondAttribute="leading" id="jlU-rD-5c9"/>
+                        <constraint firstItem="Cha-nE-9hE" firstAttribute="leading" secondItem="ish-8A-HfE" secondAttribute="leading" constant="15" id="q2B-G5-hIJ"/>
+                        <constraint firstItem="paX-iQ-cOu" firstAttribute="top" secondItem="Cha-nE-9hE" secondAttribute="bottom" constant="10" id="vou-xU-Qgi"/>
+                        <constraint firstItem="rzk-Pl-F3Q" firstAttribute="trailing" secondItem="Cha-nE-9hE" secondAttribute="trailing" id="yjl-74-ot1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ish-8A-HfE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3NV-Ta-Shs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ish-8A-HfE" secondAttribute="trailing" id="G8J-Iv-6Xa"/>
+                <constraint firstItem="ish-8A-HfE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="b8l-WX-VPO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

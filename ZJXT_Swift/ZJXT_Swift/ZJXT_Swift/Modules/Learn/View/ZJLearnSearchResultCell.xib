@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ZJLearnSearchResultCell" id="KGk-i7-Jjw" customClass="ZJLearnSearchResultCell" customModule="ZJXT_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp3" translatesAutoresizingMaskIntoConstraints="NO" id="SBO-S0-4Q3">
+                        <rect key="frame" x="10" y="10" width="92.5" height="69.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="SBO-S0-4Q3" secondAttribute="height" multiplier="4:3" id="lYX-qY-MAy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 视频 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjv-Ri-xFb">
+                        <rect key="frame" x="63.5" y="58.5" width="34" height="16"/>
+                        <color key="backgroundColor" red="0.25098039220000001" green="0.68627450980000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="cHt-DD-ycF"/>
+                            <constraint firstAttribute="width" constant="34" id="jWo-ng-Wq3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="营养基础课程" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9y3-Y6-GTw">
+                        <rect key="frame" x="110" y="10" width="199" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公开课 | 北京大学" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IR-3b-BoT">
+                        <rect key="frame" x="110" y="39.5" width="199" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10'36'   10万人观看" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzy-mc-YWV">
+                        <rect key="frame" x="110" y="62" width="199" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJk-pp-6zo">
+                        <rect key="frame" x="0.0" y="88.5" width="319" height="1"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="E1B-wc-ZOO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SBO-S0-4Q3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="7I4-wf-YDf"/>
+                    <constraint firstItem="3IR-3b-BoT" firstAttribute="centerY" secondItem="SBO-S0-4Q3" secondAttribute="centerY" constant="3" id="Huq-CA-GD2"/>
+                    <constraint firstAttribute="trailing" secondItem="9y3-Y6-GTw" secondAttribute="trailing" constant="10" id="Kc3-rN-qKj"/>
+                    <constraint firstItem="kzy-mc-YWV" firstAttribute="leading" secondItem="3IR-3b-BoT" secondAttribute="leading" id="M9S-oO-x4V"/>
+                    <constraint firstAttribute="trailing" secondItem="BJk-pp-6zo" secondAttribute="trailing" id="QO2-8I-qzh"/>
+                    <constraint firstAttribute="bottom" secondItem="BJk-pp-6zo" secondAttribute="bottom" id="RvO-2R-Rom"/>
+                    <constraint firstItem="9y3-Y6-GTw" firstAttribute="top" secondItem="SBO-S0-4Q3" secondAttribute="top" id="XYH-RN-o46"/>
+                    <constraint firstAttribute="trailing" secondItem="kzy-mc-YWV" secondAttribute="trailing" constant="10" id="cQY-zq-RcV"/>
+                    <constraint firstItem="3IR-3b-BoT" firstAttribute="leading" secondItem="9y3-Y6-GTw" secondAttribute="leading" id="cq5-cS-pwR"/>
+                    <constraint firstItem="kzy-mc-YWV" firstAttribute="bottom" secondItem="SBO-S0-4Q3" secondAttribute="bottom" id="j6j-SZ-ZgC"/>
+                    <constraint firstItem="9y3-Y6-GTw" firstAttribute="leading" secondItem="SBO-S0-4Q3" secondAttribute="trailing" constant="8" id="j9v-39-OG4"/>
+                    <constraint firstAttribute="trailing" secondItem="3IR-3b-BoT" secondAttribute="trailing" constant="10" id="qVb-22-Wdv"/>
+                    <constraint firstAttribute="bottom" secondItem="SBO-S0-4Q3" secondAttribute="bottom" constant="10" id="tOJ-YC-Wbd"/>
+                    <constraint firstItem="BJk-pp-6zo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="u3z-rz-8bh"/>
+                    <constraint firstItem="Tjv-Ri-xFb" firstAttribute="trailing" secondItem="SBO-S0-4Q3" secondAttribute="trailing" constant="-5" id="xcA-kg-ltK"/>
+                    <constraint firstItem="Tjv-Ri-xFb" firstAttribute="bottom" secondItem="SBO-S0-4Q3" secondAttribute="bottom" constant="-5" id="y33-Y0-aej"/>
+                    <constraint firstItem="SBO-S0-4Q3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="yMt-he-iZ3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="SBO-S0-4Q3" id="lWy-9a-kXT"/>
+                <outlet property="infoLabel" destination="kzy-mc-YWV" id="Vcs-b4-1VT"/>
+                <outlet property="nameLabel" destination="9y3-Y6-GTw" id="BNd-Eq-Bl7"/>
+                <outlet property="subtitleLabel" destination="3IR-3b-BoT" id="oEP-fn-xOO"/>
+            </connections>
+            <point key="canvasLocation" x="96.5" y="75.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="temp3" width="201" height="134"/>
+    </resources>
+</document>

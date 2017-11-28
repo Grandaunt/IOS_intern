@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZJSayInfoFirstCell" customModule="ZJXT_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmS-WL-UgH">
+                        <rect key="frame" x="68" y="15" width="65.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9-15 19:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeM-Dr-xHg">
+                        <rect key="frame" x="68" y="37" width="74.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="兄弟们好久不见了，大爷今天下午一起聚聚，聊聊天，吃吃饭，有家属的顺便带着家属" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTP-PA-HJF">
+                        <rect key="frame" x="15" y="70" width="290" height="57.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp1" translatesAutoresizingMaskIntoConstraints="NO" id="xRh-0b-xnc">
+                        <rect key="frame" x="15" y="15" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="DFc-yB-gIQ"/>
+                            <constraint firstAttribute="height" constant="40" id="aax-pf-2uc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zeM-Dr-xHg" firstAttribute="bottom" secondItem="xRh-0b-xnc" secondAttribute="bottom" id="2rG-Ef-PPy"/>
+                    <constraint firstItem="xRh-0b-xnc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="IEx-ht-qmT"/>
+                    <constraint firstItem="zeM-Dr-xHg" firstAttribute="leading" secondItem="DmS-WL-UgH" secondAttribute="leading" id="NkP-vB-jEO"/>
+                    <constraint firstItem="LTP-PA-HJF" firstAttribute="top" secondItem="xRh-0b-xnc" secondAttribute="bottom" constant="15" id="QxE-Gi-XQp"/>
+                    <constraint firstItem="DmS-WL-UgH" firstAttribute="top" secondItem="xRh-0b-xnc" secondAttribute="top" id="U8G-oH-ned"/>
+                    <constraint firstItem="DmS-WL-UgH" firstAttribute="leading" secondItem="xRh-0b-xnc" secondAttribute="trailing" constant="13" id="rUY-0g-TP3"/>
+                    <constraint firstItem="zeM-Dr-xHg" firstAttribute="leading" secondItem="DmS-WL-UgH" secondAttribute="leading" id="sph-Af-l2z"/>
+                    <constraint firstAttribute="trailing" secondItem="LTP-PA-HJF" secondAttribute="trailing" constant="15" id="uU0-Fs-jfP"/>
+                    <constraint firstItem="LTP-PA-HJF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="wYw-KG-n2O"/>
+                    <constraint firstItem="xRh-0b-xnc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="y7g-DJ-0zV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="xRh-0b-xnc" id="Nif-dA-xXR"/>
+                <outlet property="infoLabel" destination="LTP-PA-HJF" id="xwd-gt-x8g"/>
+                <outlet property="nameLabel" destination="DmS-WL-UgH" id="qel-cN-mWh"/>
+                <outlet property="timeLabel" destination="zeM-Dr-xHg" id="9l5-SB-doo"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="temp1" width="48" height="48"/>
+    </resources>
+</document>
