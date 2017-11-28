@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ZJMyLogCell" id="KGk-i7-Jjw" customClass="ZJMyLogCell" customModule="ZJXT_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017.11.11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6E-lS-2SG">
+                        <rect key="frame" x="15" y="10" width="65.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京奥尔科技有限公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mt-ap-N61">
+                        <rect key="frame" x="15" y="36" width="163.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQ2-qh-R7V">
+                        <rect key="frame" x="259" y="13" width="46" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="已提交">
+                            <color key="titleColor" red="0.25098039215686274" green="0.68627450980392157" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRV-VX-X9z">
+                        <rect key="frame" x="0.0" y="65.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="zuP-hY-iMm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="tRV-VX-X9z" secondAttribute="bottom" id="H9P-gT-y0l"/>
+                    <constraint firstItem="p6E-lS-2SG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="KfJ-BH-IGC"/>
+                    <constraint firstAttribute="trailing" secondItem="KQ2-qh-R7V" secondAttribute="trailing" constant="15" id="OHo-cp-BrU"/>
+                    <constraint firstItem="tRV-VX-X9z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QMV-wS-3kq"/>
+                    <constraint firstAttribute="trailing" secondItem="tRV-VX-X9z" secondAttribute="trailing" id="QsX-9I-c25"/>
+                    <constraint firstItem="p6E-lS-2SG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="aG4-fl-GZE"/>
+                    <constraint firstItem="0mt-ap-N61" firstAttribute="top" secondItem="p6E-lS-2SG" secondAttribute="bottom" constant="8" id="tbg-6L-rFm"/>
+                    <constraint firstItem="KQ2-qh-R7V" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-5" id="wRL-Nz-2oJ"/>
+                    <constraint firstItem="0mt-ap-N61" firstAttribute="leading" secondItem="p6E-lS-2SG" secondAttribute="leading" id="zQS-U6-tcN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commitBtn" destination="KQ2-qh-R7V" id="iry-Mm-kkA"/>
+                <outlet property="companyLabel" destination="0mt-ap-N61" id="zCG-HU-lMh"/>
+                <outlet property="timeLabel" destination="p6E-lS-2SG" id="oHz-VD-0cg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

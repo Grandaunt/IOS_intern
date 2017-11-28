@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ZJVCAddExperienceCell" id="KGk-i7-Jjw" customClass="ZJVCAddExperienceCell" customModule="ZJXT_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gL-Wz-wKf">
+                        <rect key="frame" x="15" y="0.0" width="290" height="99.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RER-VI-v3W">
+                                <rect key="frame" x="80" y="24.5" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="  添加教育经历" image="add_experience">
+                                    <color key="titleColor" red="0.25098039215686274" green="0.68627450980392157" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请从最近一份工作说起" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kv0-9E-TqZ">
+                                <rect key="frame" x="10" y="58" width="270" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.98431372549019602" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kv0-9E-TqZ" firstAttribute="leading" secondItem="7gL-Wz-wKf" secondAttribute="leading" constant="10" id="1uH-Th-uBQ"/>
+                            <constraint firstAttribute="height" constant="100" id="M7w-Ac-W7J"/>
+                            <constraint firstItem="Kv0-9E-TqZ" firstAttribute="centerX" secondItem="7gL-Wz-wKf" secondAttribute="centerX" id="Njj-7T-Klh"/>
+                            <constraint firstItem="Kv0-9E-TqZ" firstAttribute="top" secondItem="RER-VI-v3W" secondAttribute="bottom" constant="12.5" id="YFP-el-yXe"/>
+                            <constraint firstItem="RER-VI-v3W" firstAttribute="centerX" secondItem="7gL-Wz-wKf" secondAttribute="centerX" id="ZEW-7a-vq5"/>
+                            <constraint firstAttribute="trailing" secondItem="Kv0-9E-TqZ" secondAttribute="trailing" constant="10" id="gEc-Jo-8kP"/>
+                            <constraint firstItem="RER-VI-v3W" firstAttribute="centerY" secondItem="7gL-Wz-wKf" secondAttribute="centerY" constant="-15" id="m7s-rj-U4l"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7gL-Wz-wKf" secondAttribute="bottom" id="Nrn-3D-mEe"/>
+                    <constraint firstAttribute="trailing" secondItem="7gL-Wz-wKf" secondAttribute="trailing" constant="15" id="ZjK-8g-hYc"/>
+                    <constraint firstItem="7gL-Wz-wKf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hTa-ni-SQJ"/>
+                    <constraint firstItem="7gL-Wz-wKf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="iWm-TD-k7Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="addBtn" destination="RER-VI-v3W" id="wL3-hS-bZK"/>
+                <outlet property="backView" destination="7gL-Wz-wKf" id="OAn-Sq-mNM"/>
+                <outlet property="infoLabel" destination="Kv0-9E-TqZ" id="TOD-mn-FAe"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_experience" width="17" height="17"/>
+    </resources>
+</document>
